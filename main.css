@@ -4,18 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: center;   
+    min-height: 110vh;
     background: url('./resources/bg.jpg') no-repeat center center/cover;
 }
+
 .container {
     position: relative;
     width: 95vw;    
     max-width: 800px;
 }
+
 .content {
     position: absolute;
     top: 50%;
@@ -29,6 +32,7 @@ body {
     flex-direction: column;
     gap: 30px;
 }
+
 #diamondSection
 {   
     display: flex;
@@ -74,16 +78,19 @@ body {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
+
 #pageText {
     font-size: 0.8rem;
     margin: 10px 0;
 }
+
 #pagesSection {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
+
 #pagesSection a {
     text-decoration: none;
     color: white;
@@ -109,11 +116,81 @@ body {
     position: absolute;
     width: 2px;
     height: 30.5px;
-    background: white;
-    bottom: 34.2%;
+    background: white;   
+    bottom: 34%;
     left: 50%;
     transform: translateX(-50%);
 }
 
+@media (min-width: 665.6px){       
+    .vertical-line-top
+    {      
+        top: 21.9%;        
+    }
+    
+    .vertical-line-bottom
+    {       
+        bottom: 35.1%;    
+    }    
+}
 
+@media (min-width: 992px)
+{
+    body 
+    {       
+        min-height: 120vh;       
+    }  
+
+    .content 
+    {       
+        width: 120%;        
+    }
+
+    #pagesSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;       
+    }
+
+    #pageTitle {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    #pageText {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    #centerSection
+    {    
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 80px;
+    }
+    
+    .vertical-line-top
+    {      
+        top: 21.9%; 
+        height: 90px;       
+    }
+    
+    .vertical-line-bottom
+    {       
+        bottom: 9.4%;
+        height: 31px;      
+    }      
+} 
+
+@media (min-width: 1400px)
+{
+    .content 
+    {    
+        width: 170%;  
+    }
+}
 
