@@ -1,89 +1,119 @@
-html,body
-{
+
+* {
+    margin: 0;
     padding: 0;
-    margin: 0; 
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    background-image: url("./resources/bg.jpg");
-    background-size:cover;
-    background-position: 10%;    
-    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
-
-main
-{  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./resources/bg.jpg') no-repeat center center/cover;
+}
+.container {
+    position: relative;
+    width: 95vw;    
+    max-width: 800px;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    color: white;
     width: 100%;
-    height: 100%;   
-}
 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 #diamondSection
 {   
-    > img
-    {         
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 3%;
-        margin-top: 10%;
-    }
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 70px;
+
+    #circle 
+    {  
+        position: absolute;
+        bottom: 78%;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+       
+        border: 1px solid white;
+        border-radius: 50%;
+
+        > img
+        {         
+            display: block;    
+            height: 30px;    
+        }
+    }   
 }
 
 #centerSection
-{  
-   
-    margin: 50px 30px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    
-    > div 
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        
-        padding: 50px;
-
-        #pageTitle
-        {    
-            font-size: 3rem;
-            font-weight: 600;
-            margin: 0px;
-        }
-
-        #pageText
-        {
-            > span 
-            {             
-               text-decoration: underline;
-               text-decoration-style: dotted;
-            }
-        }
-    }
+{    
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 80px;
 }
 
-#pagesSection
-{   
-   display: flex;
-   justify-content: center;   
-   
-   > .pages
-    {
-        border: 1px solid white;
-        
-        > p 
-        {
-            padding: 0px 40px;
-        }
-    }
+#pageTitle {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
-
-
-
-p
-{
+#pageText {
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+#pagesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+#pagesSection a {
+    text-decoration: none;
     color: white;
-    font-size: large;
+    padding: 10px 20px;
+    border: 1px solid white;
+    width: 200px;
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.3s;
 }
+
+.vertical-line-top{
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background: white;
+    top: 21.9%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vertical-line-bottom{
+    position: absolute;
+    width: 2px;
+    height: 30.5px;
+    background: white;
+    bottom: 34.2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
