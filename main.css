@@ -1,0 +1,89 @@
+html,body
+{
+    padding: 0;
+    margin: 0; 
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-image: url("./resources/bg.jpg");
+    background-size:cover;
+    background-position: 10%;    
+    background-repeat: no-repeat;
+}
+
+main
+{  
+    width: 100%;
+    height: 100%;   
+}
+
+#diamondSection
+{   
+    > img
+    {         
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 3%;
+        margin-top: 10%;
+    }
+}
+
+#centerSection
+{  
+   
+    margin: 50px 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    
+    > div 
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        
+        padding: 50px;
+
+        #pageTitle
+        {    
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0px;
+        }
+
+        #pageText
+        {
+            > span 
+            {             
+               text-decoration: underline;
+               text-decoration-style: dotted;
+            }
+        }
+    }
+}
+
+#pagesSection
+{   
+   display: flex;
+   justify-content: center;   
+   
+   > .pages
+    {
+        border: 1px solid white;
+        
+        > p 
+        {
+            padding: 0px 40px;
+        }
+    }
+}
+
+
+
+p
+{
+    color: white;
+    font-size: large;
+}
