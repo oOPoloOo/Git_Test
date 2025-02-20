@@ -13,40 +13,25 @@ body {
     background: url('./resources/bg.jpg') no-repeat center center/cover;
 }
 
-.container {
-    position: relative;
-    width: 95vw;    
-    max-width: 800px;
-}
-
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
+   
     text-align: center;
-    color: white;
-    width: 100%;
+    color: white;  
+    width: 95vw; 
+    margin-top: 5px;
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    
 }
 
 #diamondSection
 {   
     display: flex;
     justify-content: center; 
-    margin-bottom: 70px;
 
     #circle 
     {  
-        position: absolute;
-        bottom: 78%;
-        left: 50%;
-        transform: translateX(-50%);
-
-
         width: 70px;
         height: 70px;
         display: flex;
@@ -70,7 +55,7 @@ body {
     border-bottom: 2px solid white;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 80px;
+   
 }
 
 #pageTitle {
@@ -86,8 +71,7 @@ body {
 
 #pagesSection {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column;   
     align-items: center;
 }
 
@@ -102,51 +86,38 @@ body {
     transition: 0.3s;
 }
 
-.vertical-line-top{
-    position: absolute;
-    width: 2px;
-    height: 60px;
-    background: white;
-    top: 21.9%;
-    left: 50%;
-    transform: translateX(-50%);
+
+.vertical-line{
+  display: flex;
+  justify-content: center;
+  
+   
+   >div:nth-child(1) 
+   {
+        height: 60px;
+        border: 1px solid white;
+   }
 }
 
-.vertical-line-bottom{
-    position: absolute;
-    width: 2px;
-    height: 30.5px;
-    background: white;   
-    bottom: 34%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media (min-width: 665.6px){       
-    .vertical-line-top
-    {      
-        top: 21.9%;        
+@media (min-width: 667px)
+{
+    .content
+    {
+        margin-top: 0px;
+        margin-bottom: 8px;
     }
-    
-    .vertical-line-bottom
-    {       
-        bottom: 35.1%;    
-    }    
 }
 
 @media (min-width: 992px)
-{
-    body 
-    {       
-        min-height: 120vh;       
-    }  
-
-    .content 
-    {       
-        width: 120%;        
+{ 
+    .content
+    {
+        margin-top: 40px;
+        margin-bottom: 0px;
     }
 
-    #pagesSection {
+    #pagesSection 
+    {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -161,36 +132,20 @@ body {
 
     #pageText {
         font-size: 1.2rem;
-        margin: 10px 0;
+       
     }
 
-    #centerSection
-    {    
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin-top: 80px;
-    }
     
-    .vertical-line-top
-    {      
-        top: 21.9%; 
-        height: 90px;       
-    }
-    
-    .vertical-line-bottom
-    {       
-        bottom: 9.4%;
-        height: 31px;      
-    }      
 } 
-
-@media (min-width: 1400px)
+@media (min-width: 1370px)
 {
-    .content 
-    {    
-        width: 170%;  
+    .content
+    {
+        margin-top: 0;
+        margin-bottom: 25px;
+        
     }
 }
+
+
 
