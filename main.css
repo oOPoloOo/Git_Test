@@ -13,20 +13,12 @@ body {
     background: url('./resources/bg.jpg') no-repeat center center/cover;
 }
 
-.container {
-    position: relative;
-    width: 95vw;    
-    max-width: 800px;
-}
-
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
+   
     text-align: center;
-    color: white;
-    width: 100%;
+    color: white;  
+    width: 95vw; 
+    margin-top: 5px;
 
     display: flex;
     flex-direction: column;
@@ -79,8 +71,7 @@ body {
 
 #pagesSection {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column;   
     align-items: center;
 }
 
@@ -108,19 +99,25 @@ body {
    }
 }
 
-@media (min-width: 992px)
+@media (min-width: 667px)
 {
-    body 
-    {       
-        min-height: 120vh;       
-    }  
+    .content
+    {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+}
 
-    .content 
-    {       
-        width: 120%;        
+@media (min-width: 992px)
+{ 
+    .content
+    {
+        margin-top: 40px;
+        margin-bottom: 0px;
     }
 
-    #pagesSection {
+    #pagesSection 
+    {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -135,25 +132,20 @@ body {
 
     #pageText {
         font-size: 1.2rem;
-        margin: 10px 0;
+       
     }
 
-    #centerSection
-    {    
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        padding-top: 30px;
-        padding-bottom: 30px;
-      
-    }    
     
 } 
-
-@media (min-width: 1400px)
+@media (min-width: 1370px)
 {
-    .content 
-    {    
-        width: 170%;  
+    .content
+    {
+        margin-top: 0;
+        margin-bottom: 25px;
+        
     }
 }
+
+
 
