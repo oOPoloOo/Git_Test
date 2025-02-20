@@ -30,23 +30,16 @@ body {
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    
 }
 
 #diamondSection
 {   
     display: flex;
     justify-content: center; 
-    margin-bottom: 70px;
 
     #circle 
     {  
-        position: absolute;
-        bottom: 78%;
-        left: 50%;
-        transform: translateX(-50%);
-
-
         width: 70px;
         height: 70px;
         display: flex;
@@ -70,7 +63,7 @@ body {
     border-bottom: 2px solid white;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 80px;
+   
 }
 
 #pageTitle {
@@ -102,36 +95,17 @@ body {
     transition: 0.3s;
 }
 
-.vertical-line-top{
-    position: absolute;
-    width: 2px;
-    height: 60px;
-    background: white;
-    top: 21.9%;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.vertical-line-bottom{
-    position: absolute;
-    width: 2px;
-    height: 30.5px;
-    background: white;   
-    bottom: 34%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media (min-width: 665.6px){       
-    .vertical-line-top
-    {      
-        top: 21.9%;        
-    }
-    
-    .vertical-line-bottom
-    {       
-        bottom: 35.1%;    
-    }    
+.vertical-line{
+  display: flex;
+  justify-content: center;
+  
+   
+   >div:nth-child(1) 
+   {
+        height: 60px;
+        border: 1px solid white;
+   }
 }
 
 @media (min-width: 992px)
@@ -170,20 +144,9 @@ body {
         border-bottom: 2px solid white;
         padding-top: 30px;
         padding-bottom: 30px;
-        margin-top: 80px;
-    }
+      
+    }    
     
-    .vertical-line-top
-    {      
-        top: 21.9%; 
-        height: 90px;       
-    }
-    
-    .vertical-line-bottom
-    {       
-        bottom: 9.4%;
-        height: 31px;      
-    }      
 } 
 
 @media (min-width: 1400px)
